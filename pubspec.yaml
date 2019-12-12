@@ -2,7 +2,7 @@ name: primitive_type_parser
 description: A set of safe parse methods for dart primitive types
 version: 0.0.1
 author: DanLe<danle.sdev@gmail.com>
-homepage:
+homepage: https://github.com/Danopie/primitive_type_parser
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
