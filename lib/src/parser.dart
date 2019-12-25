@@ -53,3 +53,13 @@ bool parseBool(dynamic value, [bool fallback = false]) {
 dynamic parseDynamic(dynamic value, [dynamic fallback]) {
   return value ?? fallback;
 }
+
+DateTime parseDateTime(dynamic value, [DateTime fallback]) {
+  if (value is DateTime || value == null) {
+    return value ?? fallback;
+  } else if (value is String) {
+    return DateTime.tryParse(value);
+  } else {
+    return fallback;
+  }
+}

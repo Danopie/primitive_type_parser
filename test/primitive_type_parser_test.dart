@@ -46,4 +46,13 @@ void main() {
     expect(parseDynamic(null), null);
     expect(parseDynamic(null, 2), 2);
   });
+
+  test('Test parseDateTime', () {
+    expect(parseDateTime(null), null);
+    expect(parseDateTime(2), null);
+    expect(parseDateTime("2"), null);
+    expect(parseDateTime(DateTime(2012, 22, 11)), DateTime(2012, 22, 11));
+    expect(
+        parseDateTime("2012-02-27 13:27:00"), DateTime(2012, 2, 27, 13, 27, 0));
+  });
 }
