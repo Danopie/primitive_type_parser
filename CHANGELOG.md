@@ -1,3 +1,7 @@
+## [0.0.3]
+
+- Fix type double cannot be parsed to type int
+
 ## [0.0.2]
 
 - Add parseDateTime

@@ -1,6 +1,8 @@
 int parseInt(dynamic value, [int fallback]) {
   if (value is int || value == null) {
     return value ?? fallback;
+  } else if (value is double) {
+    return value.toInt();
   } else if (value is String) {
     return int.tryParse(value) ?? fallback;
   } else {
