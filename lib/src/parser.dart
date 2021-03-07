@@ -1,4 +1,4 @@
-int parseInt(dynamic value, [int fallback]) {
+int? parseInt(dynamic value, [int? fallback]) {
   if (value is int || value == null) {
     return value ?? fallback;
   } else if (value is double) {
@@ -10,7 +10,7 @@ int parseInt(dynamic value, [int fallback]) {
   }
 }
 
-double parseDouble(dynamic value, [double fallback]) {
+double? parseDouble(dynamic value, [double? fallback]) {
   if (value is double || value == null) {
     return value ?? fallback;
   } else if (value is int) {
@@ -22,7 +22,7 @@ double parseDouble(dynamic value, [double fallback]) {
   }
 }
 
-String parseString(dynamic value, [String fallback]) {
+String? parseString(dynamic value, [String? fallback]) {
   if (value is String || value == null) {
     return value ?? fallback;
   } else {
@@ -30,7 +30,7 @@ String parseString(dynamic value, [String fallback]) {
   }
 }
 
-bool parseBool(dynamic value, [bool fallback = false]) {
+bool? parseBool(dynamic value, [bool fallback = false]) {
   if (value is bool || value == null) {
     return value ?? fallback;
   } else if (value is String) {
@@ -56,7 +56,7 @@ dynamic parseDynamic(dynamic value, [dynamic fallback]) {
   return value ?? fallback;
 }
 
-DateTime parseDateTime(dynamic value, [DateTime fallback]) {
+DateTime? parseDateTime(dynamic value, [DateTime? fallback]) {
   if (value is DateTime || value == null) {
     return value ?? fallback;
   } else if (value is String) {
