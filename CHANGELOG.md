@@ -1,3 +1,5 @@
+## [1.0.2]
+- Use test from flutter to avoid dependency conflict
 ## [1.0.1]
 - Upgrade test package version
 

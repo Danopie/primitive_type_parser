@@ -1,4 +1,4 @@
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:primitive_type_parser/primitive_type_parser.dart';
 
 void main() {

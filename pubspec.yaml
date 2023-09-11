@@ -1,11 +1,12 @@
 name: primitive_type_parser
 description: A set of safe parse methods for dart primitive types
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/Danopie/primitive_type_parser
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  test: ^1.24.0
+  flutter_test:
+    sdk: flutter
 
